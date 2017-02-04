@@ -1,0 +1,20 @@
+Dieses Booklet gibt einen kurzen Überblick über Microservices und gibt
+so eine Starthilfe für die Arbeit mit Microservices.
+
+Inhalt
+
+Was sind Microservices?
+- Die Größe von Microservices
+- Bounded Context und Domain-driven Design
+- Das Gesetzt von Conway
+
+Warum Microservices?
+- Agilität skalieren
+- Legacy-Anwendungen migrieren
+- Nachhaltige Entwicklung
+- Robustheit
+- Continuous Delivery
+- Unabhängige Skalierbarkeit
+- Technologie-Wahlfreiheit
+
+Das letzte Kapitel zeigt, wie man mit konkret Microservices loslegen kann.
