@@ -1,4 +1,4 @@
-#3 Warum Microservices? {#chapter3]
+#3 Warum Microservices? {#chapter3}
 
 Es gibt mehr als einen Grund, Microservices einzusetzen. Je nach
 Einsatzkontext können die Architekturentwürfe völlig unterschiedlich

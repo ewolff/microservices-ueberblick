@@ -379,12 +379,12 @@ und auch Urlaubsvertretungen sind leicht zu organisieren. Die Idee,
 Mitarbeiter mit ähnlicher Qualifikation jeweils in einem Team arbeiten
 zu lassen, ist nicht besonders abwegig.
 
+{id="Abb2"}
+![Abb. 2: Aufteilung der Teams nach technischen Skills](images/02-GesetztConwayLimitierung.png)
+
 Aber nach dem Gesetz von Conway werden die drei Teams jeweils
 Artefakte in der Architektur schaffen. Es entsteht also eine
 Datenbankschicht, eine Backend-Schicht und eine Datenbank-Schicht.
-
-{id="Abb2"}
-![Abb. 2: Aufteilung der Teams nach technischen Skills](images/02-GesetztConwayLimitierung.png)
 
 Diese Architektur hat einige Nachteile:
 
