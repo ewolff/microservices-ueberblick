@@ -1,5 +1,5 @@
-Dieses Booklet gibt einen kurzen Überblick über Microservices und gibt
-so eine Starthilfe für die Arbeit mit Microservices.
+Dieses Booklet gibt einen kurzen Überblick über Microservices und bietet
+so eine gute Starthilfe für die Arbeit mit Microservices.
 
 Inhalt
 
