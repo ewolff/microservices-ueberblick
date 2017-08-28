@@ -58,8 +58,7 @@ Kubernetes ab.
 
 * Cloud Foundry ist ein PaaS (Platform as a Service). Der PaaS kümmert
 sich darum, eine Anwendung zu deployen und zu
-betreiben. [Das Cloud-Foundry-Beispiel]
-(https://github.com/ewolff/microservice-cloudfoundry) ist in Java
+betreiben. [Das Cloud-Foundry-Beispiel](https://github.com/ewolff/microservice-cloudfoundry) ist in Java
 geschrieben mit Spring Cloud / Boot. Es verwendet Cloud Foundry für
 Deployment, Service Discovery, Routing und Load Balancing. Die Demo
  nutzt ebenfalls Hystrix für Resilience. Der Code hängt nicht von
