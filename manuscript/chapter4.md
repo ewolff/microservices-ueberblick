@@ -30,9 +30,9 @@ zeigt auch keine Technologien, um Microservices umzusetzen. Unter
 Beispiele, die verschiedene Optionen für die Implementierung von
 Microservices zeigen:
 
-Für synchrone Kommunikation gibt es folgende Beispiele:
-
 #### Synchrone Kommunikation
+
+Für synchrone Kommunikation gibt es folgende Beispiele:
 
 * Die [Consul-Demo](https://github.com/ewolff/microservice-consul) ist
 in Java mit Spring Cloud / Boot geschrieben. Die Demo nutzt Consul für
@@ -66,6 +66,9 @@ Cloud Foundry ab.
 
 ####Asynchrone Kommunikation
 
+Asynchrone Kommunikation macht den Umgang mit unzuverlässigen Services
+oder Netzwerken einfacher:
+
 * [Kafka](https://github.com/ewolff/microservice-kafka) verwendet Kafka für
 Kommunikation, eine Message-oriented Middleware, die Nachrichten
 verschicken kann.
@@ -75,6 +78,8 @@ zur asynchronen Kommunikation mit dem Atom-Format.
 
 #### UI Integration
 
+Die Integration auf Ebene der UI führt zu einer sehr losen Kopplung:
+
 * [ESI](https://github.com/ewolff/SCS-ESI) zeigt, wie Edge Side
 Includes (ESI) verwendet werden können, um die Benutzeroberfläche von
 Microservices zu integrieren. Ein Microservice ist in Java mit Spring
@@ -82,7 +87,11 @@ Boot geschrieben, der andere mit Go. Der Go-Microservice wird
 mit Multi Stage Docker Containern gebaut.
 
 * [JQuery](https://github.com/ewolff/SCS-jQuery) zeigt, wie jQuery kann
-zur Integration der Benutzeroberfläche von Mikroservices genutzt werden.
+zur Integration der Benutzeroberfläche von Mikroservices genutzt
+werden.
+
+Jedes dieser Beispiele hat eine umfangreiche Dokumentation, die auch
+erläutert, wie man die Beispiele laufen lassen kann.
 
 ## 4.3	Loslegen
 
