@@ -43,7 +43,7 @@ und Ribbon für Load Balancing Es gibt auch eine
   [ELK-Stack](https://github.com/ewolff/microservice-consul#elastic-stack)
  für die Analyse der Log-Dateien.
 
-* Die [Netflix-Demo] (https://github.com/ewolff/microservice) ist
+* Die [Netflix-Demo](https://github.com/ewolff/microservice) ist
 ebenfalls in Java mit Spring Cloud / Boot geschrieben. Die Demo
 verwendet Netflix Eureka für Service Discovery, Netflix Zuul für
 Routing, Hystrix für Resilience und Ribbon für Load Balancing.
@@ -67,22 +67,22 @@ Cloud Foundry ab.
 
 ####Asynchrone Kommunikation
 
-* [Kafka] (https://github.com/ewolff/microservice-kafka) verwendet Kafka für
+* [Kafka](https://github.com/ewolff/microservice-kafka) verwendet Kafka für
 Kommunikation, eine Message-oriented Middleware, die Nachrichten
 verschicken kann.
 
-* [Atom] (https://github.com/ewolff/microservice-atom) verwendet REST / HTTP
+* [Atom](https://github.com/ewolff/microservice-atom) verwendet REST / HTTP
 zur asynchronen Kommunikation mit dem Atom-Format.
 
 #### UI Integration
 
-* [ESI] (https://github.com/ewolff/SCS-ESI) zeigt, wie Edge Side
+* [ESI](https://github.com/ewolff/SCS-ESI) zeigt, wie Edge Side
 Includes (ESI) verwendet werden können, um die Benutzeroberfläche von
 Microservices zu integrieren. Ein Microservice ist in Java mit Spring
 Boot geschrieben, der andere mit Go. Der Go-Microservice wird
 mit Multi Stage Docker Containern gebaut.
 
-* [JQuery] (https://github.com/ewolff/SCS-jQuery) zeigt, wie jQuery kann
+* [JQuery](https://github.com/ewolff/SCS-jQuery) zeigt, wie jQuery kann
 zur Integration der Benutzeroberfläche von Mikroservices genutzt werden.
 
 ## 4.3	Loslegen
