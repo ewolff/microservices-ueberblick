@@ -1,26 +1,25 @@
 #2 Was sind Microservices? {#chapter2}
 
-Die Idee der Microservices [^MS] ist nicht neu. Einen ganz ähnlichen Ansatz
+Die Idee der Microservices[^MS] ist nicht neu. Einen ganz ähnlichen Ansatz
 verfolgt schon die UNIX Philosophie. Sie basiert auf drei Ideen:
 
 [^MS]: Eberhard Wolff: Microservices - Grundlagen flexibler Softwarearchitekturen, dpunkt Verlag, 2015, ISBN 978-3864903137
 
-* Ein Programm soll nur eine Aufgabe erfüllen, und das soll es gut
-machen.
+* Ein Programm soll nur eine Aufgabe erfüllen --- die dafür sehr gut.
 
 * Die Programme sollen zusammenarbeiten können.
 
 * Außerdem sollen die Programme eine universelle Schnittstelle
 nutzen. In UNIX sind das Textströme.
 
-Dadurch entstehen wiederverwendbare Programme – letztendlich eine Art
+Dadurch entstehen wiederverwendbare Programme - letztendlich eine Art
 Komponenten.
 
 Microservices dienen dazu, große Systeme aufzuteilen. Damit sind
-Microservices ein Modularisierungskonzept. Es gibt eine große Anzahl
-solcher Konzepte, aber Microservices sind anders. Sie können
+Microservices ein Modularisierungskonzept. Es gibt viele
+Modularisierungskonzepte, aber Microservices sind anders. Sie können
 unabhängig voneinander in Produktion gebracht werden. Eine Änderung an
-einem Microservice bedeuten nur, dass dieser Microservices in
+einem Microservice bedeuten, dass nur dieser Microservices in
 Produktion gebracht werden muss. Bei anderen Modularisierungskonzepten
 müssen alle Module gemeinsam ausgeliefert werden. Eine Änderung an
 einem Modul erfordert dann ein erneutes Deployment der gesamten
@@ -29,44 +28,46 @@ Anwendung mit allen Modulen.
 ####Microservice = virtuelle Maschine
 
 Microservices können nicht mit den Modularisierungskonzepten der
-Programmiersprachen umgesetzt werden. Denn dieses Konzept erfordert
-üblicherweise, dass alle Module zusammen in einem Programm
+Programmiersprachen umgesetzt werden. Denn diese Konzepte erfordern,
+dass alle Module zusammen in einem Programm
 ausgeliefert werden. Stattdessen müssen Microservices als virtuelle
 Maschinen, leichtgewichtigere Alternativen wie Docker-Container oder
-einzelne Prozesse umgesetzt werden. Sie können alle ohne weiteres
+einzelne Prozesse umgesetzt werden. Nur dann  können sie
 einzeln in Produktion gebracht werden.
 
-Daraus ergeben sich einige weitere Vorteile: So sind Microservices
+Daraus ergeben sich weitere Vorteile: So sind Microservices
 nicht an eine bestimmte Technologie gebunden. Sie können in jeder
-Programmiersprache oder Plattform implementiert sein. Und natürlich
-können Microservices auch eigene Unterstützungsdienste wie Datenbanken
+Programmiersprache oder mit jeder Plattform implementiert sein. Und
+natürlich
+können Microservices eigene Unterstützungsdienste wie Datenbanken
 oder andere Infrastruktur mitbringen.
 
-Microservice sollen außerdem getrennte Datenhaushalte haben. Jeder
-Microservice ist also Herr über seine Daten. Die Erfahrung lehrt
-nämlich, dass die gemeinsame Nutzung von Datenbank-Schemata Änderungen
+Microservice sollen getrennte Datenhaushalte haben. Jeder
+Microservice ist also Herr über seine Daten. Die Erfahrung lehrt,
+dass die gemeinsame Nutzung von Datenbank-Schemata Änderungen
 an den Datenstrukturen praktisch unmöglich machen. Das behindert die
-Änderbarkeit von Software so stark, dass diese Art der Kopplung
-ausgeschlossen werden sollte.
+Änderbarkeit von Software so stark, dass Microservices diese Art der
+Kopplung
+ausschliessen.
 
 ####Kommunikation zwischen Microservices
 
 Microservices müssen miteinander kommunizieren können. Dazu sind
-unterschiedliche Ansätze denkbar:
+unterschiedliche Ansätze möglich:
 
 *	Die Microservices können Daten *replizieren*. Gemeint ist damit
-     nicht  einfach das Kopieren der Daten ohne Änderung des
+     nicht  das Kopieren der Daten ohne Änderung des
      Schemas. Dann sind Änderungen an dem Schema unmöglich, weil
      mehrere Microservices dasselbe Schema nutzen. Wenn aber ein
      Microservice Bestellungen verwaltet und ein anderer die Daten der
-     Bestellungen analysiert, können die Datenformate unterschiedlich
-     sein und auch die Zugriffe sind anders: Die Analyse wird die
-     Daten vor allem lesen, für die Verwaltung der Bestellungen sind
+     Bestellungen analysiert, sind Datenformate 
+     und Zugriffe unterschiedlich: Die Analyse liest
+     die Daten vor allem, für die Verwaltung der Bestellungen sind
      Lesen und Schreiben eher gleichberechtigt. Auch klassische
      Datawarehouses arbeiten mit Replikation für die Analyse großer
      Datenmengen.
 	 
-* Wenn Microservices eine HTML-UI haben, können sie einfach *Links*
+* Wenn Microservices eine HTML-UI haben, können sie *Links*
      auf anderen Microservices nutzen. Es ist außerdem möglich, dass
      ein Microservice HTML-Code anderer Microservices integriert.
 	 
@@ -86,46 +87,46 @@ Microservices anzugeben, ist gar nicht so einfach. Schon die Einheit
 ist ein Problem: Lines of Code (LoC, Codezeilen) sind keine gute
 Einheit. Schließlich hängt die Anzahl der Zeilen eines Programms nicht
 nur von der Formatierung, sondern auch von der Programmiersprache
-ab. Überhaupt erscheint es wenig sinnvoll, einen Architekturansatz mit
+ab. Überhaupt ist es wenig sinnvoll, einen Architekturansatz mit
 solchen Maßzahlen zu bewerten. Schließlich kann die Größe eines
 Systems kaum sinnvoll absolut angegeben werden, sondern nur im
 Verhältnis zu den abgebildeten Geschäftsprozessen und ihrer
 Komplexität.
 
-Daher ist es viel besser, die Größe eines Microservices anhand von
+Daher ist es besser, die Größe eines Microservices anhand von
 oberen und unteren Grenzen zu definieren. Für Microservices gilt
 eigentlich, dass kleiner besser ist:
 
-* Ein Microservice sollte von einem Team weiterentwickelt
+* Ein Microservice sollte von einem *Team* weiterentwickelt
   werden. Daher darf ein Microservice auf keinen Fall so groß sein,
   dass mehr als ein Team an ihm entwickeln muss.
   
 * Microservices sind ein Modularisierungsansatz. Entwickler sollten
-  einzelne Module verstehen können - daher müssen Module und damit
+  einzelne *Module* verstehen können - daher müssen Module und damit
   Microservices so klein sein, dass sie ein Entwickler noch verstehen
   kann.
 
-* Schließlich soll ein Microservice ersetzbar sein. Wenn der
-  Microservice nicht mehr wartbar ist oder beispielsweise eine
+* Schließlich soll ein Microservice *ersetzbar* sein. Wenn der
+  Microservice nicht mehr wartbar ist oder eine
   leistungsfähigere Technologie genutzt werden soll, kann der
   Microservice durch eine neue Implementierung ausgetauscht
-  werden. Microservices sind damit der einzige Ansatz, der bereits bei
+  werden. Microservices sind der einzige Ansatz, der bereits bei
   der Entwicklung die Ablösung des Systems oder zumindest von Teilen
   des Systems betrachtet.
 
 {id="Abb1"}
 ![Abb. 1: Die ideale Größe von Microservices](images/01-Groesse.png)
 
-Die Frage ist nun, warum man die Microservices nicht möglichst klein
+Die Frage ist , warum man Microservices nicht möglichst klein
 baut. Schließlich verstärken sich die Vorteile, wenn die Microservices
-besonders klein sind. Aber es gibt verschiedene Gründe, warum sehr
+besonders klein sind. Aber es gibt Gründe, warum sehr
 kleine Microservices nicht so ohne weitere möglich sind:
 
-* Verteilte Kommunikation zwischen Microservices über das Netz ist
+* *Verteilte Kommunikation* zwischen Microservices über das Netz ist
 aufwändig. Wenn die Microservices größer sind, ist die Kommunikation
 eher lokal in einem Microservice und damit weniger aufwändig.
 
-* Das Verschieben von Logik über die Grenzen von Microservices hinweg
+* Das *Verschieben von Logik* über die Grenzen von Microservices hinweg
   ist schwierig. Der Code muss in ein anderes System bewegt
   werden. Wenn das System eine andere Technologie oder
   Programmiersprache nutzt, kann eine Neuimplementierung des Codes die
@@ -137,34 +138,34 @@ eher lokal in einem Microservice und damit weniger aufwändig.
   einfach umsetzbar.
 
 
-* Eine Transaktion in einem Microservice ist einfach umsetzbar. Über
+* Eine *Transaktion* in einem Microservice ist einfach umsetzbar. Über
   die Grenzen eines Microservice hinaus ist das nicht mehr so einfach,
   weil dazu verteilte Transaktionen notwendig sind. Es bietet sich
   also an, die Größe eines Microservice so zu wählen, dass eine
   Transaktion vollständig in einem Microservice abgearbeitet wird.
 
-* Ähnliches gilt für die fachliche Konsistenz der Daten: Wenn
+* Ähnliches gilt für die *fachliche Konsistenz* der Daten: Wenn
   beispielsweise der Kontostand mit dem Ergebnis aus den Einnahmen und
-  Ausgaben übereinstimmen soll, ist das in einem Microservice relativ
+  Ausgaben übereinstimmen soll, ist das in einem Microservice 
   einfach umsetzbar, aber über Microservices hinweg kaum
   praktikabel. Daher sollten Microservices also so groß sein, dass
   Daten, die konsistent sein müssen, im selben Microservice verwaltet
   werden.
 
 * Jeder Microservice muss unabhängig in Produktion gebracht werden und
-  daher eine eigene Umgebung haben. Das verbraucht Hardware-Ressourcen
+  daher eine *eigene Umgebung* haben. Das verbraucht Hardware-Ressourcen
   und bedeutet außerdem, dass der Aufwand für die Administration des
   Systems steigt. Wenn es größere und damit weniger Microservices
   gibt, sinkt dieser Aufwand.
 
 Bis zu einem gewissen Maße hängt die Größe eines Microservice von der
-Infrastruktur ab: Wenn die Infrastruktur besonders einfach ist, kann
+Infrastruktur ab: Wenn die Infrastruktur einfach ist, kann
 sie sehr viele und damit auch sehr kleine Microservices
 unterstützen. Die Vorteile der Microservice-Architektur sind dann
-dementsprechend größer. Schon recht einfache Maßnahmen können den
+dementsprechend größer. Schon einfache Maßnahmen können den
 Aufwand bei der Infrastruktur reduzieren: Wenn es Templates für
 Microservices gibt oder andere Möglichkeiten, um Microservices
-einfacher zu erstellen und einheitlicher zu verwalten, kann das schon
+einfacher zu erstellen und einheitlich zu verwalten, kann das 
 den Aufwand reduzieren und so kleinere Microservices möglich machen.
 
 ####Nanoservices
@@ -172,45 +173,47 @@ den Aufwand reduzieren und so kleinere Microservices möglich machen.
 Bestimmte technologische Ansätze können die Größe eines Service weiter
 reduzieren. Statt einen Microservices als virtuelle Maschine oder
 Docker-Container auszuliefern, können die Services Anwendungen in
-einem Java-EE-Application-Server sein. Java EE definiert verschiedene
+einem Java-EE-Application-Server sein. *Java EE* definiert verschiedene
 Deployment-Formate und kann in einem Application Server mehrere
-Anwendungen laufen lassen. Die Services würden dann genauso wie
-Microservices beispielsweise über REST oder Messaging
-kommunizieren. Dann sind die Services aber nicht mehr so gut
+Anwendungen laufen lassen. Die Services kommunizieren dann genauso wie
+Microservices beispielsweise über REST oder Messaging.
+Dann sind die Services aber nicht mehr so gut
 gegeneinander isoliert: Wenn eine Anwendung in einem Application
-Server viel Speicher verbraucht, wird das die anderen Anwendungen auf
-dem Application Server in Mitleidenschaft ziehen.
+Server viel Speicher verbraucht, zieht das die anderen Anwendungen auf
+dem Application Server in Mitleidenschaft.
 
 Eine andere Alternative sind OSGi-Bundles. Auch dieser Ansatz
 definiert ein Modul-System auf Basis von Java. Im Gegensatz zu Java EE
-erlaubt er aber Methodenaufrufe zwischen Bundles, so dass eine
+erlaubt *OSGi* aber Methodenaufrufe zwischen Bundles, so dass eine
 Kommunikation über REST oder Messaging nicht zwingend ist.
 
-Leider sind beide Ansätze auch beim unabhängigen Deployment
+Leider sind beide Ansätze beim unabhängigen Deployment
 problematisch: In der Praxis müssen Java-EE-Application-Server und
-auch OSGi-Laufzeitumgebungen beim Deployment neuer Module oft neu
-gestartet werden. Also beeinflusst ein Deployment auch andere Module.
+OSGi-Laufzeitumgebungen beim Deployment neuer Module oft neu
+gestartet werden. Also beeinflusst ein Deployment auch andere Module
+und eine wesentliche Eigenschaft der Microservices ist nicht mehr
+erfüllt.
 
 Dafür sinkt der Aufwand bei der Infrastruktur und auch der
 Kommunikationsaufwand, weil beispielsweise bei OSGi lokale
 Methodenaufrufe genutzt werden können. Das erlaubt kleinere Services.
 
-Um solche Services klar von Microservices abzugrenzen, ist es sinnvoll
+Um solche Services klar von Microservices abzugrenzen, ist es sinnvoll,
 einen alternativen Begriff wie „Nanoservices“ für diesen Ansatz zu
 nutzen. Schließlich bieten sie weder die Isolation von Microservices
 noch das unabhängige Deployment
 
 ##2.2 Bounded Context und Domain-Driven Design {#section2-2}
 
-Ein wesentliches Ziel von Microservices ist es, fachliche Änderungen
+Ein Ziel von Microservices ist es, fachliche Änderungen
 auf einen Microservice zu begrenzen. Fachliche Änderungen können die
-UI umfassen – daher sollte ein Microservice auch UI-Elemente
+UI umfassen. Daher sollte ein Microservice auch UI-Elemente
 integrieren. Aber auch in einem anderen Bereich sollten Änderungen im
 selben Microservice erfolgen – nämlich bei den Daten.
 
 Ein Dienst, der einen Bestellprozess implementiert, sollte
-idealerweise auch die Daten für eine Bestellung verwalten und ändern
-können. Die Microservices haben einen eigenen Datenhaushalt und können
+auch die Daten für eine Bestellung verwalten und ändern
+können. Microservices haben einen eigenen Datenhaushalt und können
 daher Daten passend speichern. Aber ein Bestellprozess benötigt mehr
 als nur die Daten der Bestellung. Auch die Daten des Kunden oder der
 Waren sind für den Bestellprozess relevant.
@@ -220,10 +223,10 @@ hilfreich. Domain-Driven Design dient zur Analyse einer fachlichen
 Domäne. Wesentliche Grundlage ist *Ubiquituous Language*. Das ist wie
 andere Bestandteile von Domain Driven Design auch ein Pattern und ist
 daher in *kursiv* gesetzt. *Ubiquituous Language* besagt, dass an der
-Software Beteiligten sollen dieselben Begriffe nutzen. Fachbegriffe
+Software Beteiligten dieselben Begriffe nutzen sollen. Fachbegriffe
 wie Bestellung, Rechnung usw. sollen sich direkt in der Software
 wiederfinden. Oft ergeben sich in einem Unternehmen eine ganz eigene
-Sprache – genau die sollte dann auch in der Software so umgesetzt
+Sprache. Ggenau die sollte dann auch in der Software so umgesetzt
 werden.
 
 [^DDD]: Eric Evans: Domain-Driven Design: Tackling Complexity in the Heart of Software, Addison-Wesley,2003, ISBN 978-0-32112-521-7
@@ -231,10 +234,10 @@ werden.
 Das Domänenmodell kann aus verschiedenen Elementen bestehen:
 
 * *Entity* ist ein Objekt mit einer eigenen Identität. In einer
-  E-Commerce-Anwendung könnten das der Kunde oder die Ware
+  E-Commerce-Anwendung kann der Kunde oder die Ware eine Entity
   sein. *Entities* werden typischerweise in einer Datenbank gespeichert.
   
-* *Value Objects* haben keine eigene Identität. Ein Beispiel kann eine
+* *Value Objects* haben keine eigene Identität. Ein Beispiel ist eine
   Adresse sein, die nur im Kontext mit einem Kunden sinnvoll ist und
   daher keine eigene Identität hat.
   
