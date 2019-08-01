@@ -1,4 +1,4 @@
-#3 Warum Microservices? {#chapter3}
+# 3 Warum Microservices? {#chapter3}
 
 Es gibt mehr als einen Grund, Microservices einzusetzen. Je nach
 Einsatzkontext können die Architekturentwürfe völlig unterschiedlich
@@ -6,7 +6,7 @@ aussehen. Es ist also nicht nur wichtig, die Vorteile zu kennen,
 sondern sie auch für das konkrete abzuwägen und eine passende
 Architektur umzusetzen.
 
-##3.1 Agilität skalieren {#section3-1}
+## 3.1 Agilität skalieren {#section3-1}
 
 Wie schon in Abschnitt 2.3 erwähnt, können Microservices Auswirkungen
 auf die Organisation haben. Idealerweise sollte jeder Microservice von
@@ -36,7 +36,7 @@ So ermöglichen Microservices die unabhängige Entwicklung der einzelnen
 Microservices und damit ein einfaches Skalieren agiler Prozesse auf
 größere Projekt-Organisationen.
 
-##3.2 Legacy-Anwendungen migrieren {#section3-2}
+## 3.2 Legacy-Anwendungen migrieren {#section3-2}
 
 Die Arbeit mit Legacy-Code ist oft schwierig: Das ist System ist
 schlecht strukturiert, so dass es schwierig ist, sich einen Überblick
@@ -59,7 +59,7 @@ durch eine Menge von Microservices ist für viele ein guter Weg, um
 Vorteile wie Continuous Delivery möglichst schnell in einem System zu
 realisieren.
 
-##3.3 Nachhaltige Entwicklung {#section3-3}
+## 3.3 Nachhaltige Entwicklung {#section3-3}
 
 Durch Microservices wird ein System in mehrere, getrennt deploybare
 Dienste aufgeteilt. Die Aufteilung des Systems in Microservices ist
@@ -100,7 +100,7 @@ Entwickler auf die Verletzung von Architektur-Regeln hinweisen. Bei
 Microservices sind diese Maßnahmen aber schon in das System
 integriert.
 
-####Ersetzbarkeit
+#### Ersetzbarkeit
 
 Eine weitere wichtige Eigenschaft von Microservices ist die
 Ersetzbarkeit: Ein Microservice kann ohne großen Aufwand durch eine
@@ -110,7 +110,7 @@ werden kann, kann es oft auch nicht neu geschrieben werden, weil der
 Aufwand dafür zu hoch wäre. Microservices zu ersetzten ist hingegen
 nicht sonderlich schwierig.
 
-####Fazit
+#### Fazit
 
 Innerhalb eines Microservice sollte es auch langfristig einfach sein,
 neue Features zu implementieren, da der Microservice klein ist. Wenn
@@ -121,7 +121,7 @@ langfristig gewährleistet werden. Microservice-Systeme versprechen
 also eine langfristige gute Wartbarkeit und Änderbarkeit der
 Software-Systeme.
 
-##3.4 Robustheit {#section3-4}
+## 3.4 Robustheit {#section3-4}
 
 In einem Microservice-System ist die Robustheit für bestimmte Probleme
 sehr hoch: Wenn in einem Deployment-Monolithen eine Funktionalität
@@ -148,7 +148,7 @@ Durch Resilience kann also ein Microservice-System sehr robust
 werden. Die Basis legt dazu die strikte Trennung in Prozesse oder
 virtuelle Maschinen.
 
-##3.5 Continuous Delivery {#section3-5}
+## 3.5 Continuous Delivery {#section3-5}
 
 Continuous Delivery [^CD] ist ein Ansatz, bei dem Software regelmäßig in
 Produktion gebracht wird. Basis ist dabei vor allem ein weitgehend
@@ -210,7 +210,7 @@ Deployment tatsächlich zu ermöglichen. Dennoch sind gerade die
 Vorteile bei Continuous Delivery ein wichtiger Grund, warum sich viele
 für Microservices interessieren.
 
-##3.6 Unabhängige Skalierbarkeit
+## 3.6 Unabhängige Skalierbarkeit
 
 Jeder Microservice läuft als ein eigener Prozess, gegebenenfalls sogar
 in einer eigenen virtuellen Maschine. Wenn also eine bestimmte
@@ -227,7 +227,7 @@ diese Fälle zu konzentrieren und zwar mit weniger Aufwand, als dies
 bei einem Deployment-Monolithen der Fall wäre. Also kann dieser Grund
 schon wesentlich für die Einführung von Microservices sein.
 
-##3.7 Technologie-Wahlfreiheit
+## 3.7 Technologie-Wahlfreiheit
 
 Im Prinzip kann jeder Microservice in einer anderen Technologie
 umgesetzt sein. Das macht natürlich das System insgesamt komplexer,
@@ -252,7 +252,7 @@ viel einfacher. Das hat auch andere positive Konsequenzen: So können
 Mitarbeiter eher neue Technologien ausprobieren, was meistens die
 Motivation hebt.
 
-##3.8 Fazit
+## 3.8 Fazit
 
 Microservices haben sehr viele Vorteile. Welche Vorteile tatsächlich
 die wichtigsten sind, hängt vom konkreten Kontext ab. Bei vielen
