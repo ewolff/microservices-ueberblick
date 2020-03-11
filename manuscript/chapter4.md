@@ -26,7 +26,7 @@ unwahrscheinlich, dass nur ein kurzlebiger Hype ist.
 
 Die Broschüre betrachtet das Thema Microservices nur theoretisch und
 zeigt auch keine Technologien, um Microservices umzusetzen. Unter
-<http://ewolff.com/microservices-demos.html> finden sich ein
+<http://ewolff.com/microservices-demos.html> finden sich einige
 Beispiele, die verschiedene Optionen für die Implementierung von
 Microservices zeigen:
 
