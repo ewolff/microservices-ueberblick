@@ -45,7 +45,7 @@ schließlich fehlen Tests. Oft ist dann noch die technologische Basis
 veraltet, so dass moderne Ansätze nicht genutzt werden können.
 
 Einige dieser Probleme sind lösbar, wenn man den Ansatz für die
-Modifikation des Systems etwas verändert: Statt den Codes des
+Modifikation des Systems etwas verändert: Statt den Code des
 Legacy-Systems zu modifizieren, wird das System an seinen externen
 Schnittstellen durch Microservices ergänzt oder teilweise
 abgelöst. Der Vorteil: Statt den Legacy-Code zu editieren, wird dieser
