@@ -102,7 +102,7 @@ gibt es auch in [Englisch](http://microservices-book.com/).
 
 [^MS1]: Eberhard Wolff: Microservices - Grundlagen flexibler Softwarearchitekturen, dpunkt Verlag, 2015, ISBN 978-3864903137
 
-Für die technische Implementierung von Microservices bietet die
+Für die technische Implementierung von Microservices bieten die
 kostenlosen
 [Microservices Rezepte](http://microservices-praxisbuch.de/rezepte.html)
 einen guten Startpunkt. Sie zeigen verschiedene
