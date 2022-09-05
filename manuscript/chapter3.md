@@ -188,7 +188,7 @@ umsetzbar:
   Regressionstest durchgeführt werden. Das ist aber aufwändig und
   macht die Continuous-Delivery-Pipeline langsam.
   
-* Schließlich ist es aufwändig, eine Release abzusichern. So wäre es
+* Schließlich ist es aufwändig, ein Release abzusichern. So wäre es
   denkbar eine zweite Umgebung aufzubauen, in der Umgebung die neue
   Version zu deployen und erst auf die neue Version umzuschalten, wenn
   sie beispielsweise noch einmal durchgetestet worden ist. Ebenso ist
