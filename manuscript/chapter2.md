@@ -434,7 +434,7 @@ unterstützt.
 {id="Abb3"}
 ![Abb. 3: Aufteilung nach Fachlichkeiten](images/03-GesetztConwayEnabler.png)
 
-[Abb. 3](#Abb3) zeigt eine mögliche Architektur en
+[Abb. 3](#Abb3) zeigt eine mögliche Architektur im
 Microservices-System: Es gibt jeweils eine Komponente für die
 Produktsuche, für die Verwaltung von Benutzern und für den
 Bestellprozess. Für jeden Microservice gibt es jeweils ein Team, dass
