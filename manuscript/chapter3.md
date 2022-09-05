@@ -215,7 +215,7 @@ für Microservices interessieren.
 Jeder Microservice läuft als ein eigener Prozess, gegebenenfalls sogar
 in einer eigenen virtuellen Maschine. Wenn also eine bestimmte
 Funktionalität besonders stark genutzt wird, kann nur der dafür
-notwendige Microservices skaliert werden, während die anderen
+notwendige Microservice skaliert werden, während die anderen
 Microservices weiterhin mit derselben Kapazität laufen.
 
 Das hört sich zunächst nach keinem besonders großen Vorteil an, aber
