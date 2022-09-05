@@ -180,7 +180,7 @@ umsetzbar:
   weil Deployment-Monolithen schwierig in Produktion zu bringen
   sind. Eine Rolle spielt beispielsweise die Datenbank, die recht groß
   sein kann und viele Daten enthalten kann. Ebenso müssen viele
-  Drittsysteme integriert oder zu simuliert werden.
+  Drittsysteme integriert oder simuliert werden.
   
 * Die Tests sind aufwändig. Gerade bei einem Deployment-Monolithen
   können Änderungen leicht Nebenwirkungen haben, die nicht
