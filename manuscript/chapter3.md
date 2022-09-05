@@ -201,7 +201,7 @@ auch unabhängige Continuous-Delivery-Pipelines haben. Diese Pipelines
 sind relativ einfach aufzubauen und die Microservices werden auch
 relativ schnell durch die Continuous-Delivery-Pipeline in Produktion
 gebracht. Auch sind die Deployments von Microservices einfacher
-abzusichern. Alle oben genannten Probleme der Deployment Monolithen
+abzusichern. Alle oben genannten Probleme der Deployment-Monolithen
 sind durch die geringere Größe von Microservices lösbar und Continuous
 Delivery wird dadurch wesentlich vereinfacht.
 
