@@ -64,7 +64,7 @@ Deployment, Service Discovery, Routing und Load Balancing. Die Demo
  nutzt ebenfalls Hystrix für Resilience. Der Code hängt nicht von
 Cloud Foundry ab.
 
-####Asynchrone Kommunikation
+#### Asynchrone Kommunikation
 
 Asynchrone Kommunikation macht den Umgang mit unzuverlässigen Services
 oder Netzwerken einfacher:
