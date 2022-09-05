@@ -387,7 +387,7 @@ zu lassen, ist nicht besonders abwegig.
 
 Aber nach dem Gesetz von Conway werden die drei Teams jeweils
 Artefakte in der Architektur schaffen. Es entsteht also eine
-Datenbankschicht, eine Backend-Schicht und eine Datenbank-Schicht.
+UI-Schicht, eine Backend-Schicht und eine Datenbank-Schicht.
 
 Diese Architektur hat einige Nachteile:
 
