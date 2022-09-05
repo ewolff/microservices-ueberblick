@@ -3,7 +3,7 @@
 Es gibt mehr als einen Grund, Microservices einzusetzen. Je nach
 Einsatzkontext können die Architekturentwürfe völlig unterschiedlich
 aussehen. Es ist also nicht nur wichtig, die Vorteile zu kennen,
-sondern sie auch für das konkrete abzuwägen und eine passende
+sondern sie auch für das konkrete Ziel abzuwägen und eine passende
 Architektur umzusetzen.
 
 ## 3.1 Agilität skalieren {#section3-1}
