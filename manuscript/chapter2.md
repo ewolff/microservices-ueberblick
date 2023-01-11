@@ -218,7 +218,7 @@ daher Daten passend speichern. Aber ein Bestellprozess benötigt mehr
 als nur die Daten der Bestellung. Auch die Daten des Kunden oder der
 Waren sind für den Bestellprozess relevant.
 
-An dieser Stelle ist Domain-Driven Design [^DDD] (DDD)
+An dieser Stelle ist [Domain-Driven Design](https://ddd-referenz.de/) [^DDD] (DDD)
 hilfreich. Domain-Driven Design dient zur Analyse einer fachlichen
 Domäne. Wesentliche Grundlage ist *Ubiquituous Language*. Das ist wie
 andere Bestandteile von Domain Driven Design auch ein Pattern und ist
@@ -452,6 +452,9 @@ Koordination der Experten wesentlich einfacher als über Team-Grenzen
 hinweg. Aus diesem Grund sind nun fachliche Anforderungen, die über
 verschiedene technische Artefakte hinweg implementiert werden müssen,
 einfacher zu implementieren.
+
+Mehr Informationen zu Conway's Law gibt es bei [Software Architektur
+im Stream](https://software-architektur.tv/2022/02/18/folge110.html). 
 
 #### Organisationskompromisse
 

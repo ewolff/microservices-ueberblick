@@ -96,9 +96,12 @@ erläutert, wie man die Beispiele laufen lassen kann.
 ## 4.3 Weitere Literatur
 
 Die Broschüre kann nur einen groben Eindruck von Microservices
-geben. Sie kann nur eine Einleitung in Microservices
-geben. Weiterführende Literatur [^MS1] kann nützlich sein. Dieses Buch
-gibt es auch in [Englisch](http://microservices-book.com/).
+geben.
+Es
+gibt sie auch in [Englisch](http://microservices-book.com/).
+Sie kann nur eine Einleitung in Microservices
+geben. Einen umfangreichen Übverblick bietet das
+Microservices-Buch. [^MS1]
 
 [^MS1]: Eberhard Wolff: Microservices - Grundlagen flexibler Softwarearchitekturen, dpunkt Verlag, 2015, ISBN 978-3864903137
 
@@ -107,7 +110,7 @@ kostenlosen
 [Microservices Rezepte](http://microservices-praxisbuch.de/rezepte.html)
 einen guten Startpunkt. Sie zeigen verschiedene
 Implementierungsalternativen auf Basis der bereits erwähnten
-Demos. Auch diese Broschüre gibt es auf
+[Demos](https://ewolff.com/microservices-demos.html). Auch diese Broschüre gibt es auf
 [Englisch](http://practical-microservices.com/recipes.html).
 
 Eine umfangreiche Darstellung technischer Implementierungsmöglichen
