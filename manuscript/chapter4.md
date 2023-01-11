@@ -98,12 +98,11 @@ erläutert, wie man die Beispiele laufen lassen kann.
 Die Broschüre kann nur einen groben Eindruck von Microservices
 geben.
 Es
-gibt sie auch in [Englisch](http://microservices-book.com/).
-Sie kann nur eine Einleitung in Microservices
-geben. Einen umfangreichen Übverblick bietet das
-Microservices-Buch. [^MS1]
-
-[^MS1]: Eberhard Wolff: Microservices - Grundlagen flexibler Softwarearchitekturen, dpunkt Verlag, 2015, ISBN 978-3864903137
+gibt sie auch in [Englisch](https://microservices-book.com/primer.html).
+Die Broschüre kann nur eine Einleitung in Microservices
+geben. Einen umfangreichen Überblick bietet das
+[Microservices-Buch](http://microservices-buch/), das es ebenfalls auch auf
+[Englisch](http://microservices-book.com/) gibt. 
 
 Für die technische Implementierung von Microservices bieten die
 kostenlosen

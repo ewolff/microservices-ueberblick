@@ -1,9 +1,8 @@
 # 2 Was sind Microservices? {#chapter2}
 
-Die Idee der Microservices[^MS] ist nicht neu. Einen ganz ähnlichen Ansatz
+Die Idee der [Microservices](https://microservices-buch.de/) ist nicht
+neu. Einen ganz ähnlichen Ansatz
 verfolgt schon die UNIX Philosophie. Sie basiert auf drei Ideen:
-
-[^MS]: Eberhard Wolff: Microservices - Grundlagen flexibler Softwarearchitekturen, dpunkt Verlag, 2015, ISBN 978-3864903137
 
 * Ein Programm soll nur eine Aufgabe erfüllen --- die dafür sehr gut.
 
